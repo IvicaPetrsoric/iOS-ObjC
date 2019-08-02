@@ -13,6 +13,7 @@
 		6BF270BA22F4602200675E24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BF270B922F4602200675E24 /* Assets.xcassets */; };
 		6BF270BD22F4602200675E24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BF270BB22F4602200675E24 /* LaunchScreen.storyboard */; };
 		6BF270C022F4602200675E24 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BF270BF22F4602200675E24 /* main.m */; };
+		6BF270CA22F463B700675E24 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BF270C922F463B700675E24 /* Card.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		6BF270BC22F4602200675E24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6BF270BE22F4602200675E24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6BF270BF22F4602200675E24 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6BF270C822F4637B00675E24 /* Card.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
+		6BF270C922F463B700675E24 /* Card.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 				6BF270B122F4602000675E24 /* AppDelegate.m */,
 				6BF270B322F4602000675E24 /* ViewController.h */,
 				6BF270B422F4602000675E24 /* ViewController.m */,
+				6BF270C822F4637B00675E24 /* Card.h */,
+				6BF270C922F463B700675E24 /* Card.m */,
 				6BF270B622F4602000675E24 /* Main.storyboard */,
 				6BF270B922F4602200675E24 /* Assets.xcassets */,
 				6BF270BB22F4602200675E24 /* LaunchScreen.storyboard */,
@@ -144,6 +149,7 @@
 				6BF270B522F4602000675E24 /* ViewController.m in Sources */,
 				6BF270C022F4602200675E24 /* main.m in Sources */,
 				6BF270B222F4602000675E24 /* AppDelegate.m in Sources */,
+				6BF270CA22F463B700675E24 /* Card.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
