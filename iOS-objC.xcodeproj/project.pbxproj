@@ -16,7 +16,7 @@
 		6BF270CA22F463B700675E24 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BF270C922F463B700675E24 /* Card.m */; };
 		6BF270CC22F4704200675E24 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BF270CB22F4704200675E24 /* Deck.m */; };
 		6BF270D022F4763700675E24 /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BF270CF22F4763700675E24 /* PlayingCard.m */; };
-		6BF270D222F59E2C00675E24 /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BF270D122F59E2C00675E24 /* PlayingCardDeck.m */; };
+		6BF270E022F5DC8500675E24 /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BF270DF22F5DC8500675E24 /* PlayingCardDeck.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,8 +36,8 @@
 		6BF270CD22F4704A00675E24 /* Deck.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Deck.h; sourceTree = "<group>"; };
 		6BF270CE22F4762D00675E24 /* PlayingCard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayingCard.h; sourceTree = "<group>"; };
 		6BF270CF22F4763700675E24 /* PlayingCard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayingCard.m; sourceTree = "<group>"; };
-		6BF270D122F59E2C00675E24 /* PlayingCardDeck.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayingCardDeck.m; sourceTree = "<group>"; };
 		6BF270D322F59E3300675E24 /* PlayingCardDeck.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayingCardDeck.h; sourceTree = "<group>"; };
+		6BF270DF22F5DC8500675E24 /* PlayingCardDeck.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayingCardDeck.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +100,7 @@
 				6BF270CE22F4762D00675E24 /* PlayingCard.h */,
 				6BF270CF22F4763700675E24 /* PlayingCard.m */,
 				6BF270D322F59E3300675E24 /* PlayingCardDeck.h */,
-				6BF270D122F59E2C00675E24 /* PlayingCardDeck.m */,
+				6BF270DF22F5DC8500675E24 /* PlayingCardDeck.m */,
 				6BF270CD22F4704A00675E24 /* Deck.h */,
 				6BF270CB22F4704200675E24 /* Deck.m */,
 			);
@@ -177,11 +177,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BF270E022F5DC8500675E24 /* PlayingCardDeck.m in Sources */,
 				6BF270D022F4763700675E24 /* PlayingCard.m in Sources */,
 				6BF270CC22F4704200675E24 /* Deck.m in Sources */,
 				6BF270B522F4602000675E24 /* CardGameViewController.m in Sources */,
 				6BF270C022F4602200675E24 /* main.m in Sources */,
-				6BF270D222F59E2C00675E24 /* PlayingCardDeck.m in Sources */,
 				6BF270B222F4602000675E24 /* CardGameAppDelegate.m in Sources */,
 				6BF270CA22F463B700675E24 /* Card.m in Sources */,
 			);
