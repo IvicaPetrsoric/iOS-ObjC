@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B65D4BC22FAEC0B00E49136 /* TextStatsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B65D4BB22FAEC0B00E49136 /* TextStatsViewController.m */; };
 		6BF270B222F4602000675E24 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BF270B122F4602000675E24 /* AppDelegate.m */; };
 		6BF270B522F4602000675E24 /* AttributorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BF270B422F4602000675E24 /* AttributorViewController.m */; };
 		6BF270B822F4602000675E24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BF270B622F4602000675E24 /* Main.storyboard */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6B65D4BB22FAEC0B00E49136 /* TextStatsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextStatsViewController.m; sourceTree = "<group>"; };
+		6B65D4C022FAEC3900E49136 /* TextStatsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextStatsViewController.h; sourceTree = "<group>"; };
 		6BF270AD22F4602000675E24 /* iOS-objC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-objC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BF270B022F4602000675E24 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6BF270B122F4602000675E24 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -62,6 +65,8 @@
 				6BF270B122F4602000675E24 /* AppDelegate.m */,
 				6BF270B322F4602000675E24 /* AttributorViewController.h */,
 				6BF270B422F4602000675E24 /* AttributorViewController.m */,
+				6B65D4C022FAEC3900E49136 /* TextStatsViewController.h */,
+				6B65D4BB22FAEC0B00E49136 /* TextStatsViewController.m */,
 				6BF270B622F4602000675E24 /* Main.storyboard */,
 				6BF270BE22F4602200675E24 /* Info.plist */,
 				6BF270EA22F9CAB300675E24 /* Supporting Files */,
@@ -152,6 +157,7 @@
 				6BF270B522F4602000675E24 /* AttributorViewController.m in Sources */,
 				6BF270C022F4602200675E24 /* main.m in Sources */,
 				6BF270B222F4602000675E24 /* AppDelegate.m in Sources */,
+				6B65D4BC22FAEC0B00E49136 /* TextStatsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
