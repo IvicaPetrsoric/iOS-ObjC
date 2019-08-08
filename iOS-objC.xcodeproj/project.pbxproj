@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B42C5CF22FC55FA002F1942 /* DropitBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B42C5CE22FC55FA002F1942 /* DropitBehavior.m */; };
 		6BF270B222F4602000675E24 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BF270B122F4602000675E24 /* AppDelegate.m */; };
-		6BF270B522F4602000675E24 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BF270B422F4602000675E24 /* ViewController.m */; };
+		6BF270B522F4602000675E24 /* Dropit.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BF270B422F4602000675E24 /* Dropit.m */; };
 		6BF270B822F4602000675E24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BF270B622F4602000675E24 /* Main.storyboard */; };
 		6BF270BA22F4602200675E24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BF270B922F4602200675E24 /* Assets.xcassets */; };
 		6BF270BD22F4602200675E24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BF270BB22F4602200675E24 /* LaunchScreen.storyboard */; };
@@ -16,11 +17,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6B42C5CE22FC55FA002F1942 /* DropitBehavior.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DropitBehavior.m; sourceTree = "<group>"; };
+		6B42C5D022FC5606002F1942 /* DropitBehavior.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DropitBehavior.h; sourceTree = "<group>"; };
 		6BF270AD22F4602000675E24 /* iOS-objC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-objC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BF270B022F4602000675E24 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6BF270B122F4602000675E24 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6BF270B322F4602000675E24 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		6BF270B422F4602000675E24 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6BF270B322F4602000675E24 /* Dropit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dropit.h; sourceTree = "<group>"; };
+		6BF270B422F4602000675E24 /* Dropit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dropit.m; sourceTree = "<group>"; };
 		6BF270B722F4602000675E24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6BF270B922F4602200675E24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6BF270BC22F4602200675E24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -60,8 +63,10 @@
 			children = (
 				6BF270B022F4602000675E24 /* AppDelegate.h */,
 				6BF270B122F4602000675E24 /* AppDelegate.m */,
-				6BF270B322F4602000675E24 /* ViewController.h */,
-				6BF270B422F4602000675E24 /* ViewController.m */,
+				6BF270B322F4602000675E24 /* Dropit.h */,
+				6BF270B422F4602000675E24 /* Dropit.m */,
+				6B42C5D022FC5606002F1942 /* DropitBehavior.h */,
+				6B42C5CE22FC55FA002F1942 /* DropitBehavior.m */,
 				6BF270B622F4602000675E24 /* Main.storyboard */,
 				6BF270B922F4602200675E24 /* Assets.xcassets */,
 				6BF270BB22F4602200675E24 /* LaunchScreen.storyboard */,
@@ -141,7 +146,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6BF270B522F4602000675E24 /* ViewController.m in Sources */,
+				6BF270B522F4602000675E24 /* Dropit.m in Sources */,
+				6B42C5CF22FC55FA002F1942 /* DropitBehavior.m in Sources */,
 				6BF270C022F4602200675E24 /* main.m in Sources */,
 				6BF270B222F4602000675E24 /* AppDelegate.m in Sources */,
 			);
