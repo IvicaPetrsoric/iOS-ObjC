@@ -8,11 +8,14 @@
 
 #import "Dropit.h"
 #import "DropitBehavior.h"
+#import "BezierPathView.h"
 
 @interface Dropit () <UIDynamicAnimatorDelegate>
-@property (weak, nonatomic) IBOutlet UIView *gameView;
+@property (weak, nonatomic) IBOutlet BezierPathView *gameView;
 @property (strong, nonatomic) UIDynamicAnimator *animator;
 @property (strong, nonatomic) DropitBehavior *dropitBehaviour;
+@property (strong, nonatomic) UIAttachmentBehavior *attachment;
+@property (strong, nonatomic) UIView *droppingView;
 @end
 
 @implementation Dropit
@@ -93,6 +96,42 @@
     [self drop];
 }
 
+- (IBAction)pan:(UIPanGestureRecognizer *)sender {
+    CGPoint gesturePoint = [sender locationInView:self.gameView];
+    
+    switch (sender.state) {
+        case UIGestureRecognizerStateBegan:
+            [self attachDroppingViewToPoint:gesturePoint];
+            break;
+        case UIGestureRecognizerStateChanged:
+            self.attachment.anchorPoint = gesturePoint;
+            break;
+        case UIGestureRecognizerStateEnded:
+            [self.animator removeBehavior:self.attachment];
+            self.gameView.path = nil;
+            break;
+            
+        default:
+            break;
+    }
+}
+
+- (void)attachDroppingViewToPoint:(CGPoint)anchorPoint {
+    if (self.droppingView) {
+        self.attachment = [[UIAttachmentBehavior alloc] initWithItem:self.droppingView attachedToAnchor:anchorPoint];
+        UIView *dropingView = self.droppingView;
+        __weak Dropit *weakSelf = self;
+        self.attachment.action = ^{
+            UIBezierPath *path = [[UIBezierPath alloc] init];
+            [path moveToPoint:weakSelf.attachment.anchorPoint];
+            [path addLineToPoint:dropingView.center];
+            weakSelf.gameView.path = path;
+        };
+        self.droppingView = nil;
+        [self.animator addBehavior:self.attachment];
+    }
+}
+
 static const CGSize DROP_SIZE = { 40, 40};
 
 - (void)drop {
@@ -106,6 +145,9 @@ static const CGSize DROP_SIZE = { 40, 40};
     dropView.backgroundColor = [self randomColor];
     
     [self.gameView addSubview:dropView];
+    
+    self.droppingView = dropView;
+    
     [self.dropitBehaviour addItem:dropView];
 }
 
