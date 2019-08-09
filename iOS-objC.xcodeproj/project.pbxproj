@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B42C5DA22FD9B33002F1942 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B42C5D922FD9B33002F1942 /* ImageViewController.m */; };
 		6BF270B222F4602000675E24 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BF270B122F4602000675E24 /* AppDelegate.m */; };
 		6BF270B522F4602000675E24 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BF270B422F4602000675E24 /* ViewController.m */; };
 		6BF270B822F4602000675E24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BF270B622F4602000675E24 /* Main.storyboard */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6B42C5D822FD9B33002F1942 /* ImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
+		6B42C5D922FD9B33002F1942 /* ImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
 		6BF270AD22F4602000675E24 /* iOS-objC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-objC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BF270B022F4602000675E24 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6BF270B122F4602000675E24 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -39,6 +42,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6B42C5D722FD9A98002F1942 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6BF270B022F4602000675E24 /* AppDelegate.h */,
+				6BF270B122F4602000675E24 /* AppDelegate.m */,
+				6BF270B922F4602200675E24 /* Assets.xcassets */,
+				6BF270BB22F4602200675E24 /* LaunchScreen.storyboard */,
+				6BF270BF22F4602200675E24 /* main.m */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		6BF270A422F4602000675E24 = {
 			isa = PBXGroup;
 			children = (
@@ -58,15 +73,13 @@
 		6BF270AF22F4602000675E24 /* iOS-objC */ = {
 			isa = PBXGroup;
 			children = (
-				6BF270B022F4602000675E24 /* AppDelegate.h */,
-				6BF270B122F4602000675E24 /* AppDelegate.m */,
+				6BF270B622F4602000675E24 /* Main.storyboard */,
+				6B42C5D822FD9B33002F1942 /* ImageViewController.h */,
+				6B42C5D922FD9B33002F1942 /* ImageViewController.m */,
 				6BF270B322F4602000675E24 /* ViewController.h */,
 				6BF270B422F4602000675E24 /* ViewController.m */,
-				6BF270B622F4602000675E24 /* Main.storyboard */,
-				6BF270B922F4602200675E24 /* Assets.xcassets */,
-				6BF270BB22F4602200675E24 /* LaunchScreen.storyboard */,
 				6BF270BE22F4602200675E24 /* Info.plist */,
-				6BF270BF22F4602200675E24 /* main.m */,
+				6B42C5D722FD9A98002F1942 /* Supporting Files */,
 			);
 			path = "iOS-objC";
 			sourceTree = "<group>";
@@ -143,6 +156,7 @@
 			files = (
 				6BF270B522F4602000675E24 /* ViewController.m in Sources */,
 				6BF270C022F4602200675E24 /* main.m in Sources */,
+				6B42C5DA22FD9B33002F1942 /* ImageViewController.m in Sources */,
 				6BF270B222F4602000675E24 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
