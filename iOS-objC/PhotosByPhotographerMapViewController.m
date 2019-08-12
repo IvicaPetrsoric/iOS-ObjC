@@ -8,9 +8,11 @@
 
 #import "PhotosByPhotographerMapViewController.h"
 #import "MapKit/MapKit.h"
+#import "AddPhotoViewController.h"
 
 @interface PhotosByPhotographerMapViewController () <MKMapViewDelegate>
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *addPhotoBarButton;
 
 @end
 
@@ -70,13 +72,14 @@
 }
 
 - (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control {
-    if (self.imageViewController) {
-        [self prepareViewController:self.imageViewController
-                           forSegue:nil
-                   toShowAnnotation:view.annotation];
-    } else {
-        [self updateLeftCalloutAccessoryViewInAnnotationView:view];
-    }}
+//    if (self.imageViewController) {
+//        [self prepareViewController:self.imageViewController
+//                           forSegue:nil
+//                   toShowAnnotation:view.annotation];
+//    } else {
+//        [self updateLeftCalloutAccessoryViewInAnnotationView:view];
+//    }
+}
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
@@ -84,6 +87,29 @@
         [self prepareViewController:segue.destinationViewController
                            forSegue:segue.identifier
                    toShowAnnotation:((MKAnnotationView *)sender).annotation];
+    }
+    
+    if ([segue.destinationViewController isKindOfClass:[AddPhotoViewController class]]) {
+        AddPhotoViewController *advc = (AddPhotoViewController *)segue.destinationViewController;
+        advc.photographer = @"Pero";
+    }
+}
+
+// unvind
+- (IBAction)addPhoto:(UIStoryboardSegue *)segue {
+    if ([segue.sourceViewController isKindOfClass:[AddPhotoViewController class]]) {
+        AddPhotoViewController *apvc = (AddPhotoViewController *)segue.sourceViewController;
+        NSString *addedPhoto = apvc.photo;
+        
+        NSLog(@"Unwind segue!!!");
+        
+        if (addedPhoto) {
+//            [self.mapView addAnnotation:addedPhoto];
+//            [self.mapView showAnnotations:@[addedPhoto] animated:YES];
+//            self.pho
+        } else {
+            NSLog(@"No recived photo from AddPhotoVC!");
+        }
     }
 }
 
@@ -112,5 +138,7 @@
     
     self.title = @"Toster";
 }
+
+
 
 @end
