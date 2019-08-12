@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B0274C6230194220022231F /* PhotosByPhotographerMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B0274C5230194220022231F /* PhotosByPhotographerMapViewController.m */; };
+		6B0274C9230195B60022231F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B0274C8230195B60022231F /* MapKit.framework */; };
 		6BF270B222F4602000675E24 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BF270B122F4602000675E24 /* AppDelegate.m */; };
-		6BF270B522F4602000675E24 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BF270B422F4602000675E24 /* ViewController.m */; };
 		6BF270B822F4602000675E24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BF270B622F4602000675E24 /* Main.storyboard */; };
 		6BF270BA22F4602200675E24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BF270B922F4602200675E24 /* Assets.xcassets */; };
 		6BF270BD22F4602200675E24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BF270BB22F4602200675E24 /* LaunchScreen.storyboard */; };
@@ -16,11 +17,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6B0274C4230194220022231F /* PhotosByPhotographerMapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotosByPhotographerMapViewController.h; sourceTree = "<group>"; };
+		6B0274C5230194220022231F /* PhotosByPhotographerMapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotosByPhotographerMapViewController.m; sourceTree = "<group>"; };
+		6B0274C8230195B60022231F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		6BF270AD22F4602000675E24 /* iOS-objC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-objC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BF270B022F4602000675E24 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6BF270B122F4602000675E24 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6BF270B322F4602000675E24 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		6BF270B422F4602000675E24 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		6BF270B722F4602000675E24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6BF270B922F4602200675E24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6BF270BC22F4602200675E24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -33,17 +35,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B0274C9230195B60022231F /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6B0274C7230195B60022231F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6B0274C8230195B60022231F /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6BF270A422F4602000675E24 = {
 			isa = PBXGroup;
 			children = (
 				6BF270AF22F4602000675E24 /* iOS-objC */,
 				6BF270AE22F4602000675E24 /* Products */,
+				6B0274C7230195B60022231F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,9 +72,9 @@
 			children = (
 				6BF270B022F4602000675E24 /* AppDelegate.h */,
 				6BF270B122F4602000675E24 /* AppDelegate.m */,
-				6BF270B322F4602000675E24 /* ViewController.h */,
-				6BF270B422F4602000675E24 /* ViewController.m */,
 				6BF270B622F4602000675E24 /* Main.storyboard */,
+				6B0274C4230194220022231F /* PhotosByPhotographerMapViewController.h */,
+				6B0274C5230194220022231F /* PhotosByPhotographerMapViewController.m */,
 				6BF270B922F4602200675E24 /* Assets.xcassets */,
 				6BF270BB22F4602200675E24 /* LaunchScreen.storyboard */,
 				6BF270BE22F4602200675E24 /* Info.plist */,
@@ -141,8 +153,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6BF270B522F4602000675E24 /* ViewController.m in Sources */,
 				6BF270C022F4602200675E24 /* main.m in Sources */,
+				6B0274C6230194220022231F /* PhotosByPhotographerMapViewController.m in Sources */,
 				6BF270B222F4602000675E24 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
