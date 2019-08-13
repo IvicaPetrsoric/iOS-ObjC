@@ -11,7 +11,7 @@
 #import <MobileCoreServices/MobileCoreServices.h>   // kUTTypeImage
 
 
-@interface AddPhotoViewController () <UITextFieldDelegate, UIAlertViewDelegate, CLLocationManagerDelegate>
+@interface AddPhotoViewController () <UITextFieldDelegate, UIAlertViewDelegate, CLLocationManagerDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *titleTextField;
 @property (weak, nonatomic) IBOutlet UITextField *subtitleTextField;
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
@@ -21,6 +21,7 @@
 @property (strong, nonatomic) CLLocation *location;
 @property (strong, nonatomic) CLLocationManager *locationManager;
 @property (strong, nonatomic, readwrite) NSString *photo;
+@property (nonatomic) NSInteger locationErrorCode;
 @end
 
 @implementation AddPhotoViewController
@@ -111,11 +112,31 @@
 }
 
 - (IBAction)cancel {
+    self.image = nil;
     [self.presentingViewController dismissViewControllerAnimated:YES completion:NULL];
 }
 
 - (IBAction)takePhoto:(UIButton *)sender {
+    UIImagePickerController *uiipc = [[UIImagePickerController alloc] init];
+    uiipc.delegate = self;
+    uiipc.mediaTypes = @[(NSString *)kUTTypeImage];
+    uiipc.sourceType = UIImagePickerControllerSourceTypeCamera;
+    uiipc.allowsEditing = YES;
+    [self presentViewController:uiipc animated:true completion: NULL];
+}
+
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
+    [self dismissViewControllerAnimated:YES completion:NULL];
+}
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<UIImagePickerControllerInfoKey,id> *)info {
+    UIImage *image = info[UIImagePickerControllerEditedImage];
+    if (!image) {
+        image = info[UIImagePickerControllerOriginalImage];
+    }
     
+    self.image = image;
+    [self dismissViewControllerAnimated:true completion:NULL];
 }
 
 #define UNWIND_SEGUE_IDENTIFIER @"Do Add Photo"
@@ -123,6 +144,9 @@
     if ([segue.identifier isEqualToString:UNWIND_SEGUE_IDENTIFIER]) {
         NSString *string = @"TOSTERRR";
         self.photo = string;
+        
+        self.imageURL = nil;
+        self.thumbnailURL = nil;
     }
 }
 
@@ -176,6 +200,10 @@
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
 {
     self.location = [locations lastObject];
+}
+
+- (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error {
+    self.locationErrorCode = error.code;
 }
 
 @end
