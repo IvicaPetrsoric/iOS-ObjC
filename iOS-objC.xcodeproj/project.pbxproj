@@ -39,6 +39,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6B0274E423030AF00022231F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6BF270B022F4602000675E24 /* AppDelegate.h */,
+				6BF270B122F4602000675E24 /* AppDelegate.m */,
+				6BF270B622F4602000675E24 /* Main.storyboard */,
+				6BF270B922F4602200675E24 /* Assets.xcassets */,
+				6BF270BB22F4602200675E24 /* LaunchScreen.storyboard */,
+				6BF270BF22F4602200675E24 /* main.m */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		6BF270A422F4602000675E24 = {
 			isa = PBXGroup;
 			children = (
@@ -58,15 +71,10 @@
 		6BF270AF22F4602000675E24 /* iOS-objC */ = {
 			isa = PBXGroup;
 			children = (
-				6BF270B022F4602000675E24 /* AppDelegate.h */,
-				6BF270B122F4602000675E24 /* AppDelegate.m */,
 				6BF270B322F4602000675E24 /* ViewController.h */,
 				6BF270B422F4602000675E24 /* ViewController.m */,
-				6BF270B622F4602000675E24 /* Main.storyboard */,
-				6BF270B922F4602200675E24 /* Assets.xcassets */,
-				6BF270BB22F4602200675E24 /* LaunchScreen.storyboard */,
 				6BF270BE22F4602200675E24 /* Info.plist */,
-				6BF270BF22F4602200675E24 /* main.m */,
+				6B0274E423030AF00022231F /* Supporting Files */,
 			);
 			path = "iOS-objC";
 			sourceTree = "<group>";
@@ -288,6 +296,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 74PDM76YJS;
 				INFOPLIST_FILE = "iOS-objC/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +314,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 74PDM76YJS;
 				INFOPLIST_FILE = "iOS-objC/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
