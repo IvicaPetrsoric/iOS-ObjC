@@ -86,7 +86,14 @@ static CGSize blockSize = { 40, 40 };
                                                   usingBlock:^(NSNotification *note) {
                                                       // only resume if we regain active and this VC is on screen at the time
                                                       if (self.view.window) [self resumeGame];
-                                                  }];}
+                                                  }];
+    [[NSNotificationCenter defaultCenter] addObserverForName:NSUserDefaultsDidChangeNotification
+                                                      object:nil
+                                                       queue:nil
+                                                  usingBlock:^(NSNotification * _Nonnull note) {
+                                                      [self resetElasticity];
+                                                  }];
+}
 
 - (void) tap {
     if ([self isPaused]) {
@@ -181,11 +188,20 @@ static CGSize blockSize = { 40, 40 };
 {
     if (!_elastic) {
         UIDynamicItemBehavior *elastic = [[UIDynamicItemBehavior alloc] init];
-        elastic.elasticity = 1.0;
         [self.animator addBehavior:elastic];
         self.elastic = elastic;
+        [self resetElasticity];
     }
     return _elastic;
+}
+
+- (void) resetElasticity {
+    NSNumber *elasticity = [[NSUserDefaults standardUserDefaults] valueForKey:@"Settings_Elasticity"];
+    if (elasticity) {
+        self.elastic.elasticity = [elasticity floatValue];
+    } else {
+        self.elastic.elasticity = 1.0;
+    }
 }
 
 - (UIDynamicItemBehavior *)quicksand
