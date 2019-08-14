@@ -26,6 +26,15 @@
 
 @implementation AddPhotoViewController
 
+#define ALERT_CANT_ADD_PHOTO NSLocalizedStringFromTable(@"ALERT_CANT_ADD_PHOTO", @"AddPhotoViewController", @"Message when no cammera available")
+
+// ako se ne može koristiti ove gore onda treba boundle koristi
+// [[NSBoundle mainBundle] localizedStringForKey:newfrc.fetchRequest.entity.name
+//                                         value:newfrc.fetchRequest.entity.name
+//                                         table:@"Entities"];
+
+//generiranje tablice stringova preko terminala => genstrings *.m, pregled generiranih ls *.strings
+
 + (BOOL)canAddPhoto
 {
     if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
@@ -43,7 +52,7 @@
     [super viewDidAppear:animated];
     
     if (![[self class] canAddPhoto]) {
-        [self fatalAlert:@"Sorry no camera"];
+        [self fatalAlert:ALERT_CANT_ADD_PHOTO];
     } else {
         [self.locationManager startUpdatingLocation];
     }

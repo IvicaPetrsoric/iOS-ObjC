@@ -11,6 +11,8 @@
 		6B0274C9230195B60022231F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B0274C8230195B60022231F /* MapKit.framework */; };
 		6B0274D8230202C60022231F /* AddPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B0274D7230202C60022231F /* AddPhotoViewController.m */; };
 		6B0274DD23020ED10022231F /* UIImage+CS193p.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B0274DC23020ED10022231F /* UIImage+CS193p.m */; };
+		6B0274E92303FA520022231F /* AddPhotoViewController.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6B0274EB2303FA520022231F /* AddPhotoViewController.strings */; };
+		6B0274EF2303FB4E0022231F /* Entities.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6B0274F12303FB4E0022231F /* Entities.strings */; };
 		6BF270B222F4602000675E24 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BF270B122F4602000675E24 /* AppDelegate.m */; };
 		6BF270B822F4602000675E24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BF270B622F4602000675E24 /* Main.storyboard */; };
 		6BF270BA22F4602200675E24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BF270B922F4602200675E24 /* Assets.xcassets */; };
@@ -26,6 +28,11 @@
 		6B0274D7230202C60022231F /* AddPhotoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddPhotoViewController.m; sourceTree = "<group>"; };
 		6B0274DB23020ED10022231F /* UIImage+CS193p.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CS193p.h"; sourceTree = "<group>"; };
 		6B0274DC23020ED10022231F /* UIImage+CS193p.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CS193p.m"; sourceTree = "<group>"; };
+		6B0274E52303F5BC0022231F /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
+		6B0274E62303F5BC0022231F /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		6B0274EA2303FA520022231F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/AddPhotoViewController.strings; sourceTree = "<group>"; };
+		6B0274EC2303FA5B0022231F /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/AddPhotoViewController.strings; sourceTree = "<group>"; };
+		6B0274F02303FB4E0022231F /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Entities.strings; sourceTree = "<group>"; };
 		6BF270AD22F4602000675E24 /* iOS-objC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-objC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BF270B022F4602000675E24 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6BF270B122F4602000675E24 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -88,9 +95,11 @@
 				6B0274DE23020EE00022231F /* UIImage+CS193p */,
 				6BF270B022F4602000675E24 /* AppDelegate.h */,
 				6BF270B122F4602000675E24 /* AppDelegate.m */,
+				6B0274EB2303FA520022231F /* AddPhotoViewController.strings */,
 				6BF270B622F4602000675E24 /* Main.storyboard */,
 				6B0274D6230202C60022231F /* AddPhotoViewController.h */,
 				6B0274D7230202C60022231F /* AddPhotoViewController.m */,
+				6B0274F12303FB4E0022231F /* Entities.strings */,
 				6B0274C4230194220022231F /* PhotosByPhotographerMapViewController.h */,
 				6B0274C5230194220022231F /* PhotosByPhotographerMapViewController.m */,
 				6BF270B922F4602200675E24 /* Assets.xcassets */,
@@ -142,6 +151,7 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
 			);
 			mainGroup = 6BF270A422F4602000675E24;
 			productRefGroup = 6BF270AE22F4602000675E24 /* Products */;
@@ -158,7 +168,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B0274E92303FA520022231F /* AddPhotoViewController.strings in Resources */,
 				6BF270BD22F4602200675E24 /* LaunchScreen.storyboard in Resources */,
+				6B0274EF2303FB4E0022231F /* Entities.strings in Resources */,
 				6BF270BA22F4602200675E24 /* Assets.xcassets in Resources */,
 				6BF270B822F4602000675E24 /* Main.storyboard in Resources */,
 			);
@@ -182,10 +194,28 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		6B0274EB2303FA520022231F /* AddPhotoViewController.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B0274EA2303FA520022231F /* en */,
+				6B0274EC2303FA5B0022231F /* fr */,
+			);
+			name = AddPhotoViewController.strings;
+			sourceTree = "<group>";
+		};
+		6B0274F12303FB4E0022231F /* Entities.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B0274F02303FB4E0022231F /* fr */,
+			);
+			name = Entities.strings;
+			sourceTree = "<group>";
+		};
 		6BF270B622F4602000675E24 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				6BF270B722F4602000675E24 /* Base */,
+				6B0274E52303F5BC0022231F /* fr */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -194,6 +224,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				6BF270BC22F4602200675E24 /* Base */,
+				6B0274E62303F5BC0022231F /* fr */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -205,6 +236,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -264,6 +296,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

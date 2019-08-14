@@ -1,0 +1,15 @@
+
+/* Class = "UILabel"; text = "Subtitle"; ObjectID = "GAb-me-oPr"; */
+"GAb-me-oPr.text" = "Subtitle";
+
+/* Class = "UIButton"; normalTitle = "Done"; ObjectID = "UjL-it-BLd"; */
+"UjL-it-BLd.normalTitle" = "D.o.n.e";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "YU8-5D-A5R"; */
+"YU8-5D-A5R.text" = "T.i.t.l.e";
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "ohA-Tr-m8Z"; */
+"ohA-Tr-m8Z.normalTitle" = "C.a.n.c.e.l";
+
+/* Class = "UIButton"; normalTitle = "Take Photo"; ObjectID = "zMd-u3-Y1H"; */
+"zMd-u3-Y1H.normalTitle" = "T.a.k.e. P.h.o.t.o";
